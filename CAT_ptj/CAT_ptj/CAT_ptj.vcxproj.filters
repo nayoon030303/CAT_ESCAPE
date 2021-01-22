@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일\other">
+      <UniqueIdentifier>{f3eed9ad-ade8-4752-9692-4c2d033bd9ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\stage">
+      <UniqueIdentifier>{49aecf34-2335-473a-8349-29d9c8c6e9b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\stage">
+      <UniqueIdentifier>{ddb74b7f-1fcd-4142-a1da-768e1dc70471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\stage\game">
+      <UniqueIdentifier>{ffe56943-ce26-4a8b-8898-4f66739d2837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\stage\game">
+      <UniqueIdentifier>{ed49f8b5-767c-4bd5-b4db-a793ce2f2356}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\enemy">
+      <UniqueIdentifier>{4504c2ae-f63f-4a08-ab11-db9fdee91363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\enemy">
+      <UniqueIdentifier>{df166f09-780c-464e-a6e8-89eec655bf0e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="global.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="textureManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="inputManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CAT_ptj.h">
+      <Filter>헤더 파일\other</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일\other</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일\other</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일\other</Filter>
+    </ClInclude>
+    <ClInclude Include="stage.h">
+      <Filter>헤더 파일\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="stageManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="titleStage.h">
+      <Filter>헤더 파일\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="storyStage.h">
+      <Filter>헤더 파일\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="mainStage.h">
+      <Filter>헤더 파일\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="miniGameRunStage.h">
+      <Filter>헤더 파일\stage\game</Filter>
+    </ClInclude>
+    <ClInclude Include="runPlayer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gameEntityManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="runBackground.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy.h">
+      <Filter>헤더 파일\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="runEnemy_3.h">
+      <Filter>헤더 파일\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="runEnemy_2.h">
+      <Filter>헤더 파일\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="runEnemy_4.h">
+      <Filter>헤더 파일\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="mathManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CAT_ptj.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="textureManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stageManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="titleStage.cpp">
+      <Filter>소스 파일\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="storyStage.cpp">
+      <Filter>소스 파일\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="mainStage.cpp">
+      <Filter>소스 파일\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="runPlayer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="gameEntityManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="miniGameRunStage.cpp">
+      <Filter>소스 파일\stage\game</Filter>
+    </ClCompile>
+    <ClCompile Include="runBackground.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="runEnemy_1.h">
+      <Filter>헤더 파일\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="runEnemy_1.cpp">
+      <Filter>소스 파일\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="runEnemy_2.cpp">
+      <Filter>소스 파일\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="runEnemy_3.cpp">
+      <Filter>소스 파일\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="runEnemy_4.cpp">
+      <Filter>소스 파일\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="mathManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CAT_ptj.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="CAT_ptj.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
