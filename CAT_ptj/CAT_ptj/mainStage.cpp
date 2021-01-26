@@ -24,6 +24,7 @@ void MainStage::Render()
 
 void MainStage::Update()
 {
+	//director.LoadAction("actions.txt");
 	state = MINIGAMESTAGE;
 
 	//´Þ¸®±â

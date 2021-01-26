@@ -24,7 +24,7 @@ public:
 	void Update();
 	void ClearAll();
 
-	void AddEnemy(int type, int x);
+	void AddEnemy(int type, int x, int y);
 	void runStageUpdate();
 	void runStageRender();
 
@@ -55,12 +55,10 @@ public:
 
 	int enemyCount;
 	int time;
-	int m_time1;
-	int m_time2;
-	int m_time3;
+	int timeOut;
 	int scoreTime;
 	int enemySpeed;
-	int timeMax;
+	
 	int computer;
 	enum direction_Type
 	{

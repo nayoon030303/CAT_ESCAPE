@@ -34,6 +34,18 @@
     <Filter Include="소스 파일\enemy">
       <UniqueIdentifier>{df166f09-780c-464e-a6e8-89eec655bf0e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\map">
+      <UniqueIdentifier>{f21f955b-1369-40ea-8005-d400b9372606}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\map">
+      <UniqueIdentifier>{37ffae28-7b35-4532-b042-b3f904525ae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\directions">
+      <UniqueIdentifier>{43e80adf-402f-445d-9427-3c7aa5aa274f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\direction">
+      <UniqueIdentifier>{43e144dd-3bde-413a-a3d9-867e235937df}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="global.h">
@@ -99,6 +111,33 @@
     <ClInclude Include="mathManager.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mapManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="map.h">
+      <Filter>헤더 파일\map</Filter>
+    </ClInclude>
+    <ClInclude Include="map_ground.h">
+      <Filter>헤더 파일\map</Filter>
+    </ClInclude>
+    <ClInclude Include="gamemap_direction.h">
+      <Filter>헤더 파일\direction</Filter>
+    </ClInclude>
+    <ClInclude Include="gameplay_director.h">
+      <Filter>헤더 파일\direction</Filter>
+    </ClInclude>
+    <ClInclude Include="map_empty.h">
+      <Filter>헤더 파일\map</Filter>
+    </ClInclude>
+    <ClInclude Include="game_stage_ui.h">
+      <Filter>헤더 파일\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="game_clear_stage.h">
+      <Filter>헤더 파일\stage</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CAT_ptj.cpp">
@@ -148,6 +187,27 @@
     </ClCompile>
     <ClCompile Include="mathManager.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="mapManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="map_ground.cpp">
+      <Filter>소스 파일\map</Filter>
+    </ClCompile>
+    <ClCompile Include="gamemap_direction.cpp">
+      <Filter>소스 파일\directions</Filter>
+    </ClCompile>
+    <ClCompile Include="gameplay_direction.cpp">
+      <Filter>소스 파일\directions</Filter>
+    </ClCompile>
+    <ClCompile Include="map_empty.cpp">
+      <Filter>소스 파일\map</Filter>
+    </ClCompile>
+    <ClCompile Include="game_stage_ui.cpp">
+      <Filter>소스 파일\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="game_clear_stage.cpp">
+      <Filter>소스 파일\stage</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

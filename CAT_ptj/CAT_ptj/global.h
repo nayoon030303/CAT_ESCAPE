@@ -11,7 +11,10 @@
 #include "inputManager.h"
 #include "stageManager.h"
 #include "gameEntityManager.h"
-//#include "coin.h"
+#include "gameplay_director.h"
+#include "gamemap_direction.h"
+#include "mapManager.h"
+//#include "player.h"
 
 
 //윈도우 사이즈
@@ -34,6 +37,8 @@
 #define TITLE 100
 #define STORY1 200
 #define MAINSTAGE 300
+#define HOLE_1 310
+#define HOLE_2 320
 #define LOADSTAGE 400
 #define LOAD_SQUARE 500
 #define MINIGAMESTAGE 600
@@ -49,7 +54,8 @@
 #define RESTAURANT_STAGE 1600
 #define RESTAURANT_STAGE_f1 1700
 #define RESTAURANT_STAGE_f2 1800
-
+#define GROUND 1900
+#define GROUND_EMPTY 2000
 
 //오브젝트
 #define CATN_1 1
@@ -65,14 +71,17 @@
 #define RUN_ENEMY4 70
 
 #define DIRECTIONS 80
-#define HP 90
-#define R_S_P 91
+#define R_S_P 90
 
-//버튼
+
+
+//ui
 #define START 2100
 #define START_BORDER 2200
 #define RANKING 2300
 #define RANKING_BORDER 2400
+#define EXP_01 2500
+#define CAT_UI 2600
 
 
 //이미지 크기
@@ -90,12 +99,16 @@
 #define GAME_OVER_TEXTULRE_HEIGHT 800
 #define MINIGAME_BUTTON_WIDTH 200
 #define MINIGAME_BUTTON_HEIGHT 80
-#define BOTTOM_Y  880
+#define BOTTOM_Y  900
+#define EXP_TEXTURE_WIDTH 1024
+#define EXP_TEXTURE_HEIGHT 32
+
 
 //위치
 #define MINIGAME_BUTTON_X 980
 #define MINIGAME_BUTTON_Y 780
 
+#define SPEED 15;
 
 
 extern HWND hWnd;
@@ -104,12 +117,12 @@ extern LPDIRECT3DDEVICE9   g_pd3dDevice;
 
 extern POINT pt;
 extern GameEntityManager gameEntityManager;
+extern MapManager mapManager;
 extern  TextureManager textureManager;
 extern InputManager inputManager;
 extern StageManager stageManager;
 //extern GameStat gameStat;
 //extern vector<Player> playerInfos;	//데이터 저장
-//extern Player* player;	//플레이어
-//extern Coin* coin_1;
-//extern Coin* coin_2;
-//extern Coin* coin_3;
+//extern Player* player; 
+extern GameplayDirector director_enemy;
+extern GameMapDirection director_map;

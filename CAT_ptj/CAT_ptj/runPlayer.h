@@ -4,10 +4,9 @@ class RunPlayer
 {
 public:
 
-	float playerX;
+	
 	void setPlayerX(float x) { playerX = x; }
 	float getPlayerX() { return playerX; }
-	float playerY;
 	void setPlayerY(float y) { playerY = y; }
 	float getPlayerY() { return playerY; }
 	void setScore(int sc) { score = sc; }
@@ -18,8 +17,6 @@ public:
 	int getWidth() { return width; }
 	void setHeight(int h) { height = h; }
 	int getHeight() { return height; }
-
-
 	void setIsBottom(bool bottom) { isBottom = bottom; }
 	bool getIsBottom() { return isBottom; }
 	void setIsJump(float jum) { isJump = jum; }
@@ -27,6 +24,8 @@ public:
 	void setIsDown(bool d) { isDown = d; }
 	bool getIsDown() { return isDown; }
 
+	float playerX;
+	float playerY;
 	bool isBottom;
 	bool isJump;
 	float jumpHeight = 0;
@@ -37,9 +36,10 @@ public:
 	int width;
 	int height;
 	int score = 0;
-	bool isDead;
 	int time = 0;
 	bool isGameOver;
+	bool isGameClear;
+	bool isDead;
 
 	RunPlayer();
 	void Update();

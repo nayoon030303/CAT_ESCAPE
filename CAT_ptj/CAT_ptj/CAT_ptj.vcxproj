@@ -146,10 +146,19 @@
     <ClInclude Include="enemy.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="gameEntityManager.h" />
+    <ClInclude Include="gamemap_direction.h" />
+    <ClInclude Include="gameplay_director.h" />
+    <ClInclude Include="game_clear_stage.h" />
+    <ClInclude Include="game_stage_ui.h" />
     <ClInclude Include="inputManager.h" />
     <ClInclude Include="mainStage.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="mapManager.h" />
+    <ClInclude Include="map_empty.h" />
+    <ClInclude Include="map_ground.h" />
     <ClInclude Include="mathManager.h" />
     <ClInclude Include="miniGameRunStage.h" />
+    <ClInclude Include="player.h" />
     <ClInclude Include="runBackground.h" />
     <ClInclude Include="runEnemy_2.h" />
     <ClInclude Include="runEnemy_3.h" />
@@ -167,7 +176,14 @@
   <ItemGroup>
     <ClCompile Include="CAT_ptj.cpp" />
     <ClCompile Include="gameEntityManager.cpp" />
+    <ClCompile Include="gamemap_direction.cpp" />
+    <ClCompile Include="gameplay_direction.cpp" />
+    <ClCompile Include="game_clear_stage.cpp" />
+    <ClCompile Include="game_stage_ui.cpp" />
     <ClCompile Include="mainStage.cpp" />
+    <ClCompile Include="map_empty.cpp" />
+    <ClCompile Include="map_ground.cpp" />
+    <ClCompile Include="mapManager.cpp" />
     <ClCompile Include="mathManager.cpp" />
     <ClCompile Include="miniGameRunStage.cpp" />
     <ClCompile Include="runBackground.cpp" />

@@ -1,0 +1,47 @@
+﻿  CAT_ptj.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  gameEntityManager.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  gamemap_direction.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  gameplay_direction.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  mainStage.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  map_ground.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  mapManager.cpp
+  miniGameRunStage.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  runBackground.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  runEnemy_1.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\enemy.h(28,34): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\enemy.h(29,26): warning C4244: 'return': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  runEnemy_1.h
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\enemy.h(28,34): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\enemy.h(29,26): warning C4244: 'return': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  runEnemy_2.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\enemy.h(28,34): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\enemy.h(29,26): warning C4244: 'return': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  runEnemy_3.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\enemy.h(28,34): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\enemy.h(29,26): warning C4244: 'return': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  runEnemy_4.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\enemy.h(28,34): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\enemy.h(29,26): warning C4244: 'return': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  runPlayer.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  stageManager.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  storyStage.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  textureManager.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\TextureManager.h(3,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  titleStage.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  코드를 생성하고 있습니다...

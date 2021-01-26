@@ -4,12 +4,12 @@
 
 RunEnemy_1::RunEnemy_1()
 {
-	//posX = WINDOW_WIDTH;
+	posX = WINDOW_WIDTH;
 	posY = BOTTOM_Y - RUN_ENEMY1_HEIGHT;
 	isDead = false;
 	radious = 0;
 	classType = 0;
-	//speed = 30;
+	speed = 15;
 
 	width = RUN_ENEMY1_WIDTH;
 	height = RUN_ENEMY1_HEIGHT;

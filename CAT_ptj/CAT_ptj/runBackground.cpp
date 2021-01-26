@@ -15,10 +15,10 @@ void RunBackGround::Render()
 	RECT rc;
 	rc.left = 0;
 	rc.top = 0;
-	rc.right = WINDOW_WIDTH;
+	rc.right = 2400;
 	rc.bottom = WINDOW_HEIGHT;
 
-	int sx = (int(screenX) % WINDOW_WIDTH);
+	int sx = (int(screenX) % 2400);
 
 	D3DXVECTOR3 pos(sx, 0, 0);
 
@@ -35,7 +35,7 @@ void RunBackGround::Render()
 	rc.right = WINDOW_WIDTH;
 	rc.bottom = WINDOW_HEIGHT;
 
-	pos = D3DXVECTOR3(sx + WINDOW_WIDTH, 0, 0);
+	pos = D3DXVECTOR3(sx + 2400, 0, 0);
 
 	element->g_pSprite->Draw(element->g_Texture, &rc, nullptr, &pos, D3DCOLOR_XRGB(255, 255, 255));
 	element->g_pSprite->End();
@@ -46,7 +46,7 @@ void RunBackGround::Render()
 void RunBackGround::Update()
 {
 	if (!gameEntityManager.runPlayer->getIsDead()) {
-		screenX -= 10.0f;
+		screenX -= SPEED;
 	}
 
 }

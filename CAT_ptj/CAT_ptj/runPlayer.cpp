@@ -18,6 +18,7 @@ RunPlayer::RunPlayer()
 	width = CAT_WIDTH;
 	height = CAT_HEIGHT;
 	isGameOver = false;
+	isGameClear = false;
 }
 
 void RunPlayer::Render()
@@ -43,8 +44,11 @@ void RunPlayer::Render()
 		rc.right = width;
 		rc.bottom = height;
 	}
+	if (isGameClear)
+	{
 
-	if (isDead)
+	}
+	else if (isDead)
 	{
 		rc.left = 300;
 		rc.top = 0;
@@ -68,7 +72,12 @@ void RunPlayer::Render()
 
 void RunPlayer::Update()
 {
-	if (!isDead)
+	if (isGameClear)
+	{
+		playerX += 10;
+
+	}
+	else if (!isDead)
 	{
 		if (inputManager.key[VK_UP] == 1 && !isJump) {
 			isJump = true;
@@ -91,7 +100,7 @@ void RunPlayer::Update()
 		//playerY = ;
 		playerY = BOTTOM_Y - height + jumpHeight;
 	}
-	if (isDead)
+	else
 	{
 		time++;
 		if (time > 20)

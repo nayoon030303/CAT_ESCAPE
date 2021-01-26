@@ -1,4 +1,4 @@
-#include "textureManager.h"
+#include "TextureManager.h"
 #include "global.h"
 
 void TextureManager::LoadTexture(const TCHAR* name, int id)

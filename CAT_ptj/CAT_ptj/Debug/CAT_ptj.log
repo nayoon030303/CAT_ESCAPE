@@ -1,2 +1,9 @@
-﻿  titleStage.cpp
-  CAT_ptj.vcxproj -> C:\Users\qwer1\포트폴리오\CAT_ptj\Debug\CAT_ptj.exe
+﻿  game_clear_stage.cpp
+  miniGameRunStage.cpp
+  runPlayer.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\runPlayer.cpp(38,22): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\runPlayer.cpp(93,23): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  stageManager.cpp
+  코드를 생성하고 있습니다...
+Debug\runEnemy_1.obj : warning LNK4042: 개체가 두 번 이상 지정되었습니다. 나머지는 무시됩니다.
+  CAT_ptj.vcxproj -> C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\Debug\CAT_ptj.exe

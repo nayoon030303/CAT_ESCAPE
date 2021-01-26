@@ -32,9 +32,13 @@ TextureManager textureManager;
 InputManager inputManager;
 StageManager stageManager;
 GameEntityManager gameEntityManager;
+MapManager mapManager;
+GameplayDirector director_enemy;
+GameMapDirection director_map;
+
 
 DWORD prevTime = 0;
-DWORD fps = 120;
+//DWORD fps = 150;
 
 void InitMyObject()
 {
@@ -44,21 +48,17 @@ void InitMyObject()
     textureManager.LoadTexture(L"stage/story3.png", STORY1+2);
     textureManager.LoadTexture(L"stage/story4.png", STORY1+3);
     textureManager.LoadTexture(L"stage/story5.png", STORY1+4);
-    textureManager.LoadTexture(L"stage/mainstage.png", MAINSTAGE);
-    textureManager.LoadTexture(L"stage/loadstage.png", LOADSTAGE);
+    textureManager.LoadTexture(L"stage/hole1.png", HOLE_1);
+    textureManager.LoadTexture(L"stage/hole2.png", HOLE_2);
     textureManager.LoadTexture(L"stage/minigamestage.png", MINIGAMESTAGE);
-    textureManager.LoadTexture(L"stage/minigamestage_1.png", MINIGAMESTAGE_1);
-    textureManager.LoadTexture(L"stage/minigamestage_2.png", MINIGAMESTAGE_2);
-    textureManager.LoadTexture(L"stage/minigamestage_3.png", MINIGAMESTAGE_3);
     textureManager.LoadTexture(L"stage/minigamerunstage.png", MINIGAME_RUN_STAGE);
     textureManager.LoadTexture(L"stage/result.png", RESULT);
     textureManager.LoadTexture(L"stage/gameOver.png", GAME_OVER);
     textureManager.LoadTexture(L"stage/minigamermusicstage.png", MINIGAME_MUSIC_STAGE);
     textureManager.LoadTexture(L"stage/minigamerspstage.png", MINIGAME_R_S_P);
-    textureManager.LoadTexture(L"stage/stockstage.png", STOCK_STAGE);
-    textureManager.LoadTexture(L"stage/restaurantstage.png", RESTAURANT_STAGE);
-    textureManager.LoadTexture(L"stage/restaurantstage_finsh1.png", RESTAURANT_STAGE_f1);
-    textureManager.LoadTexture(L"stage/restaurantstage_finsh2.png", RESTAURANT_STAGE_f2);
+
+    textureManager.LoadTexture(L"ground/ground.png", GROUND);
+    textureManager.LoadTexture(L"ground/empty.png", GROUND_EMPTY);
 
     textureManager.LoadTexture(L"cat/catNw_1.png", CATN_1);
     textureManager.LoadTexture(L"cat/catNw_2.png", CATN_2);
@@ -75,15 +75,20 @@ void InitMyObject()
     textureManager.LoadTexture(L"enemy/runEnemy4.png", RUN_ENEMY4);
     textureManager.LoadTexture(L"musicDirections/directions.png", DIRECTIONS);
 
-    //글씨
-    textureManager.LoadTexture(L"letter/start.png", START);
-    textureManager.LoadTexture(L"letter/start_border.png", START_BORDER);
-    textureManager.LoadTexture(L"letter/ranking.png", RANKING);
-    textureManager.LoadTexture(L"letter/ranking_border.png", RANKING_BORDER);
+    //ui
+    textureManager.LoadTexture(L"ui/start.png", START);
+    textureManager.LoadTexture(L"ui/start_border.png", START_BORDER);
+    textureManager.LoadTexture(L"ui/ranking.png", RANKING);
+    textureManager.LoadTexture(L"ui/ranking_border.png", RANKING_BORDER);
+    textureManager.LoadTexture(L"ui/EXP_01.png", EXP_01);
+    textureManager.LoadTexture(L"ui/cat_ui.png", CAT_UI);
+   
 
 
     //gameStat.Load();
     stageManager.MakeTitleStage();
+    director_enemy.LoadAction("directions/Enemy_actions.txt");
+    director_map.LoadAction("directions/Map_directions.txt");
 }
 
 void Render()
@@ -120,7 +125,7 @@ void Update()
 
     DWORD deltaTime = curTime - prevTime;
 
-    if (deltaTime > 1000 / fps)
+    if (deltaTime > 1)
     {
         //ESC 종료
         if (inputManager.prevKey[VK_ESCAPE] == 1 && inputManager.key[VK_ESCAPE] == 0)
@@ -137,6 +142,7 @@ void Update()
         GetCursorPos(&pt);
         ScreenToClient(hWnd, &pt);
 
+       
         stageManager.Update();
         inputManager.Update();
 
@@ -187,30 +193,7 @@ HRESULT InitD3D(HWND hWnd)
     g_pd3dDevice->SetRenderState(D3DRS_AMBIENT, 0xffffffff);
 
 
-    ////폰트 생성
-    //HDC hDC = GetDC(NULL);
-    //int nLogPixelsY = GetDeviceCaps(hDC, LOGPIXELSY);
-    //ReleaseDC(NULL, hDC);
-
-    /*int fontSize = 15;
-    int nHeight = -fontSize * nLogPixelsY / 72;*/
-
-    TCHAR g_strFont[LF_FACESIZE];
-    wcscpy_s(g_strFont, 32, L"Arial");
-
-    //D3DXCreateFont(g_pd3dDevice,            // D3D device
-    //    nHeight,               // Height
-    //    0,                     // Width
-    //    FW_BOLD,               // Weight
-    //    1,                     // MipLevels, 0 = autogen mipmaps
-    //    FALSE,                 // Italic
-    //    DEFAULT_CHARSET,       // CharSet
-    //    OUT_DEFAULT_PRECIS,    // OutputPrecision
-    //    DEFAULT_QUALITY,       // Quality
-    //    DEFAULT_PITCH | FF_DONTCARE, // PitchAndFamily
-    //    g_strFont,              // pFaceName
-    //    &g_pFont);
-
+    
 
     return S_OK;
 }

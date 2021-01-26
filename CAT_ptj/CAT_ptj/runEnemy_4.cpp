@@ -9,7 +9,7 @@ RunEnemy_4::RunEnemy_4()
 	isDead = false;
 	radious = 0;
 	classType = 0;
-	//speed = 30;
+	speed = 15;
 
 	width = RUN_ENEMY4_WIDTH;
 	height = RUN_ENEMY4_HEIGHT;
