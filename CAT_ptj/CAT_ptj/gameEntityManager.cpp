@@ -80,68 +80,75 @@ void GameEntityManager::Render()
 //runStage
 void GameEntityManager::AddEnemy(int type, int x, int y)
 {
-	if (type == 0) {
+	if (type == 0) {//네모
 		Enemy* enemy = new RunEnemy_1();
-		x = 1280;
+		//x = 1280;
 		enemy->setPosX(x);
-		//enemy->setPosY(y);
-		enemy->setSpeed(enemySpeed);
 		enemies.push_back(enemy);
 	}
-	else if (type == 1) {
+	else if (type == 1) {//긴네모
 		Enemy* enemy = new RunEnemy_2();
-		x = 1280;
+		//x = 1280;
 		enemy->setPosX(x);
-		enemy->setSpeed(enemySpeed);
 		enemies.push_back(enemy);
 	}
-	else if (type == 2) {
+	else if (type == 2) {//넓은 네모
 		Enemy* enemy = new RunEnemy_3();
 		x = 1280;
 		enemy->setPosX(x);
-		enemy->setSpeed(enemySpeed);
 		enemies.push_back(enemy);
 	}
 	else if (type == 3) {//비둘기 중간
 		Enemy* enemy = new RunEnemy_4();
 		x = 1280;
 		enemy->setPosX(x);
-		enemy->setPosY(BOTTOM_Y - CAT_HEIGHT / 2 - RUN_ENEMY4_HEIGHT - 5);
-		enemy->setSpeed(enemySpeed);
+		enemy->setPosY(y);
+		//enemy->setSpeed(enemySpeed);
 		enemies.push_back(enemy);
 	}
-	else if (type == 4) {//비둘기 위에
-		Enemy* enemy = new RunEnemy_4();
-		x = 1280;
-		enemy->setPosX(x);
-		enemy->setPosY(BOTTOM_Y - CAT_HEIGHT - RUN_ENEMY4_HEIGHT - 5);
-		enemy->setSpeed(enemySpeed);
-		enemies.push_back(enemy);
+	//else if (type == 3) {//비둘기 중간
+	//	Enemy* enemy = new RunEnemy_4();
+	//	//x = 1280;
+	//	enemy->setPosX(x);
+	//	int a = BOTTOM_Y - CAT_HEIGHT / 2 - RUN_ENEMY4_HEIGHT - 5;
+	//	enemy->setPosY(BOTTOM_Y - CAT_HEIGHT / 2 - RUN_ENEMY4_HEIGHT - 5);
+	//	enemy->setSpeed(enemySpeed);
+	//	enemies.push_back(enemy);
+	//}
+	//else if (type == 4) {//비둘기 위에
+	//	Enemy* enemy = new RunEnemy_4();
+	//	//x = 1280;
+	//	enemy->setPosX(x);
+	//	int a = BOTTOM_Y - CAT_HEIGHT - RUN_ENEMY4_HEIGHT - 5;
+	//	enemy->setPosY(BOTTOM_Y - CAT_HEIGHT - RUN_ENEMY4_HEIGHT - 5);
+	//	enemy->setSpeed(enemySpeed);
+	//	enemies.push_back(enemy);
 
-	}
-	else if (type == 5) {//비둘기 아래
-		Enemy* enemy = new RunEnemy_4();
-		x = 1280;
-		enemy->setPosX(x);
-		enemy->setPosY(BOTTOM_Y - RUN_ENEMY4_HEIGHT - 5);
-		enemy->setSpeed(enemySpeed);
-		enemies.push_back(enemy);
-	}
-	else if (type == 6) {
-		Enemy* enemy = new RunEnemy_4();
-		x = 1280;
-		enemy->setPosX(x - type);
-		enemy->setPosY(BOTTOM_Y - CAT_HEIGHT / 2 - RUN_ENEMY4_HEIGHT - 5);
-		enemy->setSpeed(enemySpeed);
-		enemies.push_back(enemy);
+	//}
+	//else if (type == 5) {//비둘기 아래
+	//	Enemy* enemy = new RunEnemy_4();
+	//	//x = 1280;
+	//	enemy->setPosX(x);
+	//	int a = BOTTOM_Y - RUN_ENEMY4_HEIGHT - 5;
+	//	enemy->setPosY(BOTTOM_Y - RUN_ENEMY4_HEIGHT - 5);
+	//	enemy->setSpeed(enemySpeed);
+	//	enemies.push_back(enemy);
+	//}
+	//else if (type == 6) {
+	//	Enemy* enemy = new RunEnemy_4();
+	//	//x = 1280;
+	//	enemy->setPosX(x);
+	//	enemy->setPosY(BOTTOM_Y - CAT_HEIGHT / 2 - RUN_ENEMY4_HEIGHT - 5);
+	//	enemy->setSpeed(enemySpeed);
+	//	enemies.push_back(enemy);
 
-		enemy = new RunEnemy_4();
-		x = 1280;
-		enemy->setPosX(x);
-		enemy->setPosY(BOTTOM_Y - CAT_HEIGHT - RUN_ENEMY4_HEIGHT - 30);
-		enemy->setSpeed(enemySpeed);
-		enemies.push_back(enemy);
-	}
+	//	enemy = new RunEnemy_4();
+	//	//x = 1280;
+	//	enemy->setPosX(x);
+	//	enemy->setPosY(BOTTOM_Y - CAT_HEIGHT - RUN_ENEMY4_HEIGHT - 30);
+	//	enemy->setSpeed(enemySpeed);
+	//	enemies.push_back(enemy);
+	//}
 
 }
 void GameEntityManager::runStageUpdate()
@@ -154,16 +161,16 @@ void GameEntityManager::runStageUpdate()
 	}
 
 	//플레이어와 enemy충돌처리
-	for (auto iter = enemies.begin(); iter != enemies.end();)
-	{
-		if (isBoxCollided(runPlayer->getPlayerX(), runPlayer->getPlayerY(), runPlayer->getWidth(), runPlayer->getHeight(),
-			(*iter)->getPosX(), (*iter)->getPosY(), (*iter)->getWidth(), (*iter)->getHeight()))
-		{
-			//runPlayer->isHITED();
-			runPlayer->setIsDead(true);
-		}
-		iter++;
-	}
+	//for (auto iter = enemies.begin(); iter != enemies.end();)
+	//{
+	//	if (isBoxCollided(runPlayer->getPlayerX(), runPlayer->getPlayerY(), runPlayer->getWidth(), runPlayer->getHeight(),
+	//		(*iter)->getPosX(), (*iter)->getPosY(), (*iter)->getWidth(), (*iter)->getHeight()))
+	//	{
+	//		//runPlayer->isHITED();
+	//		runPlayer->setIsDead(true);
+	//	}
+	//	iter++;
+	//}
 
 	//enemy
 	for (auto iter = enemies.begin(); iter != enemies.end();)

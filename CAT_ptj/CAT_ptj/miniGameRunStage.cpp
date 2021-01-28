@@ -11,10 +11,6 @@ MiniGameRunStage::MiniGameRunStage()
 
 void MiniGameRunStage::Render()
 {
-	runBackground.Render();
-	runPlayer.Render();
-	gameEntityManager.Render();
-	gameStageUi.Render();
 	
 	if (runPlayer.isDead)
 	{
@@ -28,6 +24,10 @@ void MiniGameRunStage::Render()
 			gameClearStage.Render();
 		}
 	}
+	runBackground.Render();
+	runPlayer.Render();
+	gameEntityManager.Render();
+	gameStageUi.Render();
 }
 
 void MiniGameRunStage::Update()

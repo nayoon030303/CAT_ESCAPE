@@ -32,15 +32,13 @@ void GameplayDirector::LoadAction(const char* filename)
 
 void GameplayDirector::Update()
 {
-	if (playing)
+	while (playing)
 	{
 		actionFrame++;
 
 		if (actionFrame > actions[actionIndex].time)
-		{
-			int actionType = actions[actionIndex].type;
-			
-			gameEntityManager.AddEnemy(actionType, actions[actionIndex].x, actions[actionIndex].y);
+		{	
+			gameEntityManager.AddEnemy(actions[actionIndex].type, actions[actionIndex].x, actions[actionIndex].y);
 			
 
 			actionIndex++;
@@ -51,6 +49,10 @@ void GameplayDirector::Update()
 			}
 
 			actionFrame = 0;
+		}
+		else
+		{
+			break;
 		}
 	}
 }
