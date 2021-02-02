@@ -94,7 +94,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>d3d9.lib;d3dx10d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d9.lib;d3dx10d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -164,6 +164,8 @@
     <ClInclude Include="runEnemy_3.h" />
     <ClInclude Include="runEnemy_4.h" />
     <ClInclude Include="runPlayer.h" />
+    <ClInclude Include="SDKsound.h" />
+    <ClInclude Include="SDKwavefile.h" />
     <ClInclude Include="stage.h" />
     <ClInclude Include="stageManager.h" />
     <ClInclude Include="storyStage.h" />
@@ -193,6 +195,8 @@
     <ClCompile Include="runEnemy_3.cpp" />
     <ClCompile Include="runEnemy_4.cpp" />
     <ClCompile Include="runPlayer.cpp" />
+    <ClCompile Include="SDKsound.cpp" />
+    <ClCompile Include="SDKwavefile.cpp" />
     <ClCompile Include="stageManager.cpp" />
     <ClCompile Include="storyStage.cpp" />
     <ClCompile Include="textureManager.cpp" />

@@ -1,5 +1,2 @@
-﻿  gameplay_direction.cpp
-C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\gameplay_direction.cpp(14,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\gameplay_direction.cpp(24,11): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\gameplay_direction.cpp(46,20): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+﻿  CAT_ptj.cpp
   CAT_ptj.vcxproj -> C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\Debug\CAT_ptj.exe

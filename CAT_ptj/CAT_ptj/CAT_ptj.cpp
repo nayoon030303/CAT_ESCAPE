@@ -35,7 +35,9 @@ GameEntityManager gameEntityManager;
 MapManager mapManager;
 GameplayDirector director_enemy;
 GameMapDirection director_map;
+CSoundManager soundManager;
 
+CSound* psound;
 
 DWORD prevTime = 0;
 //DWORD fps = 150;
@@ -89,8 +91,20 @@ void InitMyObject()
     stageManager.MakeTitleStage();
     director_enemy.LoadAction("directions/Enemy_actions.txt");
     director_map.LoadAction("directions/Map_directions.txt");
+
+    
 }
 
+
+void InitSound(HWND hWnd)
+{
+    soundManager.Initialize(hWnd, DSSCL_NORMAL);
+
+    WCHAR soundFileName[MAX_PATH];
+    swprintf_s<MAX_PATH>(soundFileName, L"sound/titleStage.wav");
+    soundManager.Create(&psound, soundFileName);
+    psound->Play();
+}
 void Render()
 {
     g_pd3dDevice->Clear(0, NULL, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER,
@@ -275,6 +289,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    }
 
    InitD3D(hWnd);
+   InitSound(hWnd);
    InitMyObject();
 
    ShowWindow(hWnd, nCmdShow);

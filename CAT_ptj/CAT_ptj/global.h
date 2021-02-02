@@ -14,6 +14,8 @@
 #include "gameplay_director.h"
 #include "gamemap_direction.h"
 #include "mapManager.h"
+#include "SDKsound.h"
+#include "SDKwavefile.h"
 //#include "player.h"
 
 
@@ -73,6 +75,7 @@
 #define DIRECTIONS 80
 #define R_S_P 90
 
+#define GAME_OUT 2500
 
 
 //ui
@@ -114,8 +117,9 @@
 extern HWND hWnd;
 extern LPDIRECT3D9         g_pD3D;
 extern LPDIRECT3DDEVICE9   g_pd3dDevice;
-
 extern POINT pt;
+
+//all the managers...
 extern GameEntityManager gameEntityManager;
 extern MapManager mapManager;
 extern  TextureManager textureManager;
@@ -124,5 +128,7 @@ extern StageManager stageManager;
 //extern GameStat gameStat;
 //extern vector<Player> playerInfos;	//데이터 저장
 //extern Player* player; 
+extern CSoundManager soundManager;
+
 extern GameplayDirector director_enemy;
 extern GameMapDirection director_map;

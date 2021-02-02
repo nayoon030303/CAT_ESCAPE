@@ -6,11 +6,18 @@ C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal 
 C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
   gameplay_direction.cpp
 C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  game_clear_stage.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  game_stage_ui.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
   mainStage.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  map_empty.cpp
 C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
   map_ground.cpp
 C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
   mapManager.cpp
+C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
   miniGameRunStage.cpp
 C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
   runBackground.cpp
@@ -40,6 +47,8 @@ C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal 
 C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
   storyStage.cpp
 C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\global.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
   textureManager.cpp
 C:\Users\qwer1\포트폴리오\CAT_ESCAPE\CAT_ptj\CAT_ptj\TextureManager.h(3,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
   titleStage.cpp

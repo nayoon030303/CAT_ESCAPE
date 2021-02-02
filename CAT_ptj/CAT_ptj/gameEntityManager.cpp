@@ -16,7 +16,7 @@ using namespace std;
 
 GameEntityManager::GameEntityManager()
 {
-	timeOut = 2500;
+	timeOut = GAME_OUT;
 	scoreTime = 0;
 	time = 0;
 	enemySpeed = 16;
@@ -44,7 +44,7 @@ void GameEntityManager::ClearAll()
 	scoreTime = 0;
 	time = 0;
 	enemySpeed = 15;
-	timeOut = 2500;
+	timeOut = GAME_OUT;
 	enemyCount = 3;
 
 	if (directions.size() > 0)

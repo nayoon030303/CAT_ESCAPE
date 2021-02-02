@@ -46,6 +46,9 @@
     <Filter Include="헤더 파일\direction">
       <UniqueIdentifier>{43e144dd-3bde-413a-a3d9-867e235937df}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\other">
+      <UniqueIdentifier>{f5dc790c-564e-426f-b850-0a8d57512ee9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="global.h">
@@ -138,6 +141,12 @@
     <ClInclude Include="game_clear_stage.h">
       <Filter>헤더 파일\stage</Filter>
     </ClInclude>
+    <ClInclude Include="SDKsound.h">
+      <Filter>헤더 파일\other</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKwavefile.h">
+      <Filter>헤더 파일\other</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CAT_ptj.cpp">
@@ -208,6 +217,12 @@
     </ClCompile>
     <ClCompile Include="game_clear_stage.cpp">
       <Filter>소스 파일\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKsound.cpp">
+      <Filter>소스 파일\other</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKwavefile.cpp">
+      <Filter>소스 파일\other</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
